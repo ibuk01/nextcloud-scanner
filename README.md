@@ -14,7 +14,7 @@ I've also changed the call of scanimage - no sudo needed if the user (f.e. www-d
 is in the group of the sane-backend. So it should be enough to add www-data to the
 sane group:
 
-$ usermod -aG sane www-data
+`# usermod -aG sane www-data`
 
 ## Installation
 
@@ -25,8 +25,8 @@ $ usermod -aG sane www-data
   * Configuring SANE is beyond this README, but:
     * For scanners shared by another host, add the hostname to /etc/sane.d/net.conf
     * Make sure scanimage can be executed by the user that runs your webserver (for example www-data or apache)
-      * You can add this line to your /etc/sudoers file (change the user to the corresponding one running the webserver):
-      `www-data ALL = (root) NOPASSWD: /usr/bin/scanimage`
+      * ~~You can add this line to your /etc/sudoers file (change the user to the corresponding one running the webserver):~~
+      ~~`www-data ALL = (root) NOPASSWD: /usr/bin/scanimage`~~
 
 ## Configuration
 
