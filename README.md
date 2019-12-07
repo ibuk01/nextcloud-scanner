@@ -10,6 +10,12 @@ MFC9142cdn using the original Brother print- and scandrivers from the support we
 
 https://support.brother.com/g/b/downloadtop.aspx?c=de&lang=de&prod=mfc9142cdn_eu
 
+I've also changed the call of scanimage - no sudo needed if the user (f.e. www-data)
+is in the group of the sane-backend. So it should be enough to add www-data to the
+sane group:
+
+$ usermod -aG sane www-data
+
 ## Installation
 
 * Place the code in [your nextcloud folder]/apps/scanner
