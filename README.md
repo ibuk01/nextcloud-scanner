@@ -4,6 +4,12 @@
 local or network-available scanner (via the SANE tools) directly into
 Nextcloud.
 
+Note:
+I've modified the Parameters so that I am able to scan with my Brother NetworkScanner
+MFC9142cdn using the original Brother print- and scandrivers from the support website.
+
+https://support.brother.com/g/b/downloadtop.aspx?c=de&lang=de&prod=mfc9142cdn_eu
+
 ## Installation
 
 * Place the code in [your nextcloud folder]/apps/scanner
