@@ -28,9 +28,9 @@ class ScannerStorage {
 	// modes could be evaluated using "scanimage -h 2>/dev/null|grep -B1 'Select the scan mode'|head -1"
 	// these modes are for my Brother MFC-9142CDN
 	private $modes = [
-		0 => '24Bit Color',
+		0 => '24Bit',
 		1 => 'Gray',
-		2 => 'Black & White'
+		2 => 'Black'
 	];
 
 	public function __construct(Folder $storage, IL10N $trans) {
