@@ -25,10 +25,12 @@ class ScannerStorage {
 	private $trans;
 
 	private $storage;
+	// modes could be evaluated using "scanimage -h 2>/dev/null|grep -B1 'Select the scan mode'|head -1"
+	// these modes are for my Brother MFC-9142CDN
 	private $modes = [
-		0 => 'Color',
+		0 => '24Bit Color',
 		1 => 'Gray',
-		2 => 'Lineart'
+		2 => 'Black & White'
 	];
 
 	public function __construct(Folder $storage, IL10N $trans) {
@@ -49,15 +51,20 @@ class ScannerStorage {
 	 * @throws NotPermittedException
 	 * @throws StorageException
 	 */
-	public function scanFile($name, $mode = 0, $resolution = 300) {
+	public function scanFile($name, $mode = 0, $resolution = 600) {
 		if ($this->storage->nodeExists($name)) {
 			// TODO: This can happen because we don't refresh the file listing
 			throw new StorageException($this->trans->t('File already exists'));
 		}
 		$file = $this->storage->newFile($name);
 		// TODO: There's probably a way to stream this without the tempfile
+		//
+		// removed SUDO - better solution is to put "www-data" into sane-group
+		//
+		// # usermod -aG sane www-data
+		//
 		exec(
-			"sudo scanimage --mode {$this->modes[$mode]} --resolution {$resolution} -x 215 -y 297| pnmtojpeg > /tmp/img",
+			"scanimage --mode {$this->modes[$mode]} --resolution {$resolution} -x 215 -y 297 --format=jpeg > /tmp/img",
 			$output,
 			$status
 		);
