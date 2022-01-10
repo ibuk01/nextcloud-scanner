@@ -1,0 +1,8 @@
+OC.L10N.register(
+    "scanner",
+    {
+    "No" : "නැහැ",
+    "Yes" : "ඔව්",
+    "File already exists" : "ගොනුව දැනටමත් පවතී"
+},
+"nplurals=2; plural=(n != 1);");

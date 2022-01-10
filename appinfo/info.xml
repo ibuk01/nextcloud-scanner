@@ -8,7 +8,7 @@
     <author>Greg Sutcliffe</author>
     <author>e-alfred</author>
     <author>Biont</author>
-    <version>0.1.7</version>
+    <version>0.2.2</version>
     <namespace>Scanner</namespace>
     <category>tools</category>
     <website>https://github.com/e-alfred/nextcloud-scanner</website>
@@ -17,6 +17,6 @@
     <screenshot>https://github.com/e-alfred/nextcloud-scanner/raw/master/screenshots/menu.png</screenshot>
     <repository>https://github.com/e-alfred/nextcloud-scanner</repository>
     <dependencies>
-    <nextcloud min-version="14" max-version="17" />
+    <nextcloud min-version="19" max-version="23" />
     </dependencies>
 </info>

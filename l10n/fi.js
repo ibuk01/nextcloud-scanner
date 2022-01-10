@@ -2,6 +2,12 @@ OC.L10N.register(
     "scanner",
     {
     "Scan Image" : "Skannaa kuva",
+    "Mode" : "Tila",
+    "Color" : "Väri",
+    "Greyscale" : "Harmaasävy",
+    "Lineart" : "Viivapiirros",
+    "Resolution" : "Resoluutio",
+    "Please adjust scan parameters" : "Säädä skannauksen parametrejä",
     "Scan Options" : "Skannausvalinnat",
     "Scan aborted." : "Skannaus peruttu.",
     "Scan started." : "Skannaus aloitettu.",
@@ -10,8 +16,9 @@ OC.L10N.register(
     "Yes" : "Kyllä",
     "File already exists" : "Tiedosto on jo olemassa",
     "Something went wrong while attempting to scan" : "Jokin meni vikaan skannausta yrittäessä",
-    "success" : "onnistui",
+    "Success" : "Onnistui",
     "Scanner" : "Skanneri",
-    "Scanner app for Nextcloud using the SANE framework" : "Skannerisovellus Nextcloudille SANE-kehystä hyödyntäen"
+    "Scanner app for Nextcloud using the SANE framework" : "Skannerisovellus Nextcloudille SANE-kehystä hyödyntäen",
+    "Adds the ability to acquire images from a network-enabled or local scanner. You need a working SANE configuration and a supported scanner. Please see the readme on how to set up this app on your system." : "Lisää toiminnon kuvien hankkimiseen paikallisilta tai verkkoon kytketyiltä skannereilta. Tarvitset toimivan SANE-määrityksen ja tuetun skannerin. Ohjeet sovelluksen asentamiseen järjestelmääsi löydät readmesta."
 },
 "nplurals=2; plural=(n != 1);");
