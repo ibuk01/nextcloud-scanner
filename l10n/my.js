@@ -1,8 +1,6 @@
 OC.L10N.register(
     "scanner",
     {
-    "Color" : "ព័ណ៌",
-    "No" : "No",
-    "Yes" : "Yes"
+    "Success" : "အောင်မြင်သည်"
 },
 "nplurals=1; plural=0;");
